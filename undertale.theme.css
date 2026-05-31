@@ -11,6 +11,13 @@
     font-weight: 200;
 }
 
+:root {
+    /* background */
+    --background-base-low: #000;
+    --background-base-lower: #000;
+    --background-base-lowest: #000;
+}
+
 .avatar_c19a55 {
 	left: 8px; /* formerly -56px*/
 	top: 0px;
@@ -24,6 +31,7 @@
 
 .avatar_c19a55:hover {
 	filter: grayscale(0%);
+
 }
 
 .avatar_c19a55:active {
@@ -31,16 +39,15 @@
 }
 
 .avatarDecoration_c19a55 {
-	width: 56px;
-	height: 56px;
+	width: 45px;
+	height: 45px;
 	left: 9px;
 	margin-top: 0;
 }
 
 .headerText_c19a55 > .username_c19a55 {
     vertical-align: top;
-    font-family: "operator" !important;
-    font-size: 2rem;
+    font-size: 1.5rem;
     overflow: visible !important;
 }
 
@@ -59,7 +66,6 @@
     border-bottom-right-radius: 0px !important;
     padding-right: 0 !important;
     opacity: 1 !important;
-    font-family: "operator" !important;
     font-size: 1rem;
 }
 
@@ -75,6 +81,7 @@
     margin-top: 8px !important;
 }
 
+/* lag machine */
 .messageListItem__5126c:has(+ .messageListItem__5126c>.groupStart__5126c) .message__5126c,
 .messageListItem__5126c:has(+ .groupStart__5126c) .message__5126c,
 .messageListItem__5126c:has(+ .scrollerSpacer__36d07) .message__5126c,
@@ -89,14 +96,12 @@
 .backgroundFlash__5126c:has(+ .wrapper_c19a55) .message__5126c,
 .messageListItem__5126c:has(:first-child.systemMessage__5126c) {
     margin-bottom: 4px;
-    font-family: "operator" !important;
     font-size: 1rem;
 }
 
 .messageListItem__5126c:has(:first-child.groupStart__5126c),
 .messageListItem__5126c:has(:first-child.systemMessage__5126c) {
     border-top-width: 5px;
-    font-family: "operator" !important;
     font-size: 1rem;
 }
 
@@ -116,7 +121,6 @@
     border-bottom-width: 5px !important;
     border-bottom-color: #fff;
     margin-bottom: 16px;
-    font-family: "operator" !important;
     font-size: 1rem;
 }
 
@@ -141,6 +145,7 @@
     /*box-shadow: 0px 0px 15px yellow;*/
     opacity: 1 !important;
     border-color: yellow;
+    background-color: rgb(55,55,0);
     border-style: solid;
 }
 
@@ -149,16 +154,16 @@
 }
 
 .beforeGroup__5126c {
-    top: 0px !important;
-    margin-bottom: 16px !important;
+    top: 14px !important;
+    margin-bottom: 46px !important;
 }
 
 .isUnread__908e2:not(.beforeGroup__5126c):not(.hasContent__908e2):not(:has(+ .messageListItem__5126c>.systemMessage__5126c)) {
-    background: #fff !important;
+    background: #000 !important;
     height: auto;
-    border-color: red !important;
+    border-color: #fff !important;
     border-style: solid;
-    border-width: 0px 1px !important;
+    border-width: 0px 5px !important;
 
     padding-top: 4px;
     padding-bottom: 4px;
@@ -183,7 +188,6 @@
     content: "Unread";
     color: red;
     background-color: #000;
-    font-family: "operator" !important;
     font-size: 1.2rem;
     padding: 5px 50px 5px 50px;
 }
@@ -194,4 +198,34 @@
 
 .scrollerSpacer__36d07 {
     height: 20px;
+}
+
+.emoji {
+    vertical-align: top;
+}
+
+body *, ::placeholder {
+    font-family: "operator" !important;
+    font-size: 1rem;
+    font-variant-ligatures: none !important;
+}
+
+/*.formWithLoadedChatInput_f75fb0 {
+ *	background: url("../../assets/barelyfaded.gif");
+ * }*/
+
+/* Standard Message Box   Edit Message Box */
+.channelTextArea_f75fb0, .channelTextArea__5126c {
+    background-color: #000 !important;
+    border-size: 5px !important;
+    border-color: #fff !important;
+    border-radius: 0px;
+}
+
+/* message input. former: .channelTextArea_f75fb0 .scrollableContainer__74017 */
+.scrollableContainer__74017 {
+    background-color: #000 !important;
+    border-size: 5px !important;
+    border-color: #fff !important;
+    border-radius: 0px;
 }
